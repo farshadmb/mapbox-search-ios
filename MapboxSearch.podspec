@@ -17,7 +17,7 @@ Some iOS platform specifics applies.
   s.homepage         = 'https://www.mapbox.com/search-service'
   s.license          = { :type => 'Mapbox TOS', :file => 'MapboxSearch.xcframework/LICENSE.md' }
   s.author           = { 'Mapbox' => 'mobile@mapbox.com'  }
-  s.source           = { :http => "https://github.com/farshadmb/mapbox-search-ios/raw/refs/heads/v1.0.0-rc.8-fix/MapboxSearch.zip" }
+  s.source           = { :http => "https://github.com/farshadmb/mapbox-search-ios/releases/download/#{s.version.to_s}/#{s.name}.zip" }
 
   s.ios.deployment_target = '11.0'
   s.swift_versions = [5.2]
