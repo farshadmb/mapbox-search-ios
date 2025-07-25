@@ -17,7 +17,7 @@ rm -rf "${RESULT_PRODUCTS_DIR}"
 
 BASEDIR=$(dirname "$0")
 
-LATEST_GIT_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+LATEST_GIT_TAG="v1.0.0-rc.8"
 MARKETING_VERSION=$(echo "${LATEST_GIT_TAG}" | perl -nle 'print $v if ($v)=/([0-9]+([.][0-9]+)+)/')
 echo "Compiling frameworks, marketing version: ${MARKETING_VERSION}, git tag: ${LATEST_GIT_TAG}"
 
